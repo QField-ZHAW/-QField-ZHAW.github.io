@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -68,14 +33,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="./qfield-cloud-management.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-46eeb4c476de49ef7df495821a6125d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1626277f927d0b6a88cf8bec84cc5165.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-bee2e4bd7d1f3bec86f216a696c13e04.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -130,7 +96,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Erfassen von Geodaten im Feld mit <span class="q">qfield</span> und <span class="q">qfield</span> Cloud</a> 
     </div>
@@ -189,11 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#anhang-1" id="toc-anhang-1" class="nav-link active" data-scroll-target="#anhang-1"><span class="header-section-number">5.1</span> Anhang 1</a></li>
-  <li><a href="#sec-python-sdk" id="toc-sec-python-sdk" class="nav-link" data-scroll-target="#sec-python-sdk"><span class="header-section-number">5.2</span> Anhang 2</a>
-  <ul class="collapse">
-  <li><a href="#ein-einzelner-nutzer-der-organisation-hinzufügen" id="toc-ein-einzelner-nutzer-der-organisation-hinzufügen" class="nav-link" data-scroll-target="#ein-einzelner-nutzer-der-organisation-hinzufügen">Ein einzelner Nutzer der Organisation hinzufügen</a></li>
-  <li><a href="#mehrere-nutzer-der-organisation-hinzufügen" id="toc-mehrere-nutzer-der-organisation-hinzufügen" class="nav-link" data-scroll-target="#mehrere-nutzer-der-organisation-hinzufügen">Mehrere Nutzer der Organisation hinzufügen</a></li>
-  </ul></li>
+  <li><a href="#sec-python-sdk" id="toc-sec-python-sdk" class="nav-link" data-scroll-target="#sec-python-sdk"><span class="header-section-number">5.2</span> Anhang 2</a></li>
   <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq"><span class="header-section-number">5.3</span> FAQ</a>
   <ul class="collapse">
   <li><a href="#warum-muss-das-qgis-projekt-zuerst-in-ein-qfield-projekt-konvertiert-werden" id="toc-warum-muss-das-qgis-projekt-zuerst-in-ein-qfield-projekt-konvertiert-werden" class="nav-link" data-scroll-target="#warum-muss-das-qgis-projekt-zuerst-in-ein-qfield-projekt-konvertiert-werden">Warum muss das QGIS Projekt zuerst in ein QField Projekt konvertiert werden?</a></li>
@@ -285,73 +249,20 @@ Tabelle&nbsp;5.1: Geopackage Data Types. Quelle: <a href="https://www.geopackage
 <li>QFieldCloud SDK via Kommandozeile (<a href="https://opengisch.github.io/qfieldcloud-sdk-python/%3E">Dokumentation</a>)</li>
 <li>(RestAPI von der Kommandozeile (<a href="https://docs.qfield.org/reference/qfieldcloud/api/%3E">Dokumentation</a>))</li>
 </ol>
-<p>In den Beispielen verwenden wir die SDK via Python. Installation: <code>pip install qfieldcloud-sdk</code></p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Hinweis
+Wichtig
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<p>Nils hat ein python script geschrieben, welches auf einfache Weise erlaubt Nutzer zu importieren: <a href="https://github.com/QField-ZHAW/qfieldcloud-sdk" class="uri">https://github.com/QField-ZHAW/qfieldcloud-sdk</a></p>
+</div>
+</div>
 <p>Aktuell können nur <em>bereits existierende</em> QField Cloud Nutzer via der API unserer Organisation hinzugefügt werden. Das Hinzufügen funktioniert nur via Benutzername, nicht via Emailadresse. <code>rata</code> hat am 26.06.2025 einen Feature request gemacht, welches das Hinzufügen via Emailadresse ermöglichen soll. Bis dieses Feature implementiert ist, müssen die Studenten zuerst QField Cloud Accounts erstellen und uns im Anschluss die Benutzernamen mitteilen.</p>
-</div>
-</div>
-<section id="ein-einzelner-nutzer-der-organisation-hinzufügen" class="level3">
-<h3 class="anchored" data-anchor-id="ein-einzelner-nutzer-der-organisation-hinzufügen">Ein einzelner Nutzer der Organisation hinzufügen</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> getpass</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> qfieldcloud_sdk <span class="im">import</span> sdk</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>user <span class="op">=</span> getpass.getpass(<span class="st">"Username:"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>passwd <span class="op">=</span> getpass.getpass(<span class="st">"Password:"</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> sdk.Client(url<span class="op">=</span><span class="st">"https://app.qfield.cloud/api/v1/"</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>client.login(user, passwd)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Der Nutzer "BENUTZERNAME" muss bereits existieren!</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># "BENUTZERNAME" darf keine Emailadresse sein :-(</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>client.add_organization_member(<span class="st">"ZHAW"</span>, <span class="st">"BENUTZERNAME"</span>, <span class="st">"member"</span>, <span class="va">False</span>) </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="mehrere-nutzer-der-organisation-hinzufügen" class="level3">
-<h3 class="anchored" data-anchor-id="mehrere-nutzer-der-organisation-hinzufügen">Mehrere Nutzer der Organisation hinzufügen</h3>
-<p>Um mehrere Mitglieder unserer Organisation hinzuzufügen, braucht es eine CSV Datei mit folgender Struktur:</p>
-<pre class="text"><code>username,org_role,proj_role
-ninja_1,member,reader
-ninja_2,member,editor
-ninja_3,admin,manager
-ninja_4,member,reporter</code></pre>
-<p>Hier der Python code für das Importieren via CSV:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests, csv</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> qfieldcloud_sdk <span class="im">import</span> sdk</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> sdk.Client(</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    url<span class="op">=</span><span class="st">"https://app.qfield.cloud/api/v1/"</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>client.login(username<span class="op">=</span><span class="st">'myuser'</span>, password<span class="op">=</span><span class="st">'mypassword'</span>)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> read_csv(csv_path: <span class="bu">str</span>, organization: <span class="bu">str</span>, project_id: <span class="bu">str</span>, is_public: <span class="bu">bool</span>):</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(csv_path, mode<span class="op">=</span><span class="st">"r"</span>, newline<span class="op">=</span><span class="st">""</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) <span class="im">as</span> csvfile:</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        reader <span class="op">=</span> csv.DictReader(csvfile)</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> user <span class="kw">in</span> reader:</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">try</span>:</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                client.add_organization_member(</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>                    organization, user[<span class="st">"username"</span>], user[<span class="st">"org_role"</span>], is_public</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>                )</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>                <span class="bu">print</span>(</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>                    <span class="ss">f"Added member </span><span class="sc">{</span>user[<span class="st">'username'</span>]<span class="sc">}</span><span class="ss"> with role </span><span class="sc">{</span>user[<span class="st">'org_role'</span>]<span class="sc">}</span><span class="ss"> in </span><span class="sc">{</span>organization<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>                )</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>            <span class="cf">except</span> requests.exceptions.RequestException:</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>                <span class="bu">print</span>(<span class="st">"Oops!"</span>)</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    organization <span class="op">=</span> <span class="st">"ZHAW"</span></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    is_public <span class="op">=</span> <span class="va">False</span></span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    csv_path <span class="op">=</span> <span class="st">'path/to/files/surveyors.csv'</span></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>    read_csv(csv_path, organization, project_id, is_public)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
 </section>
 <section id="faq" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="faq"><span class="header-section-number">5.3</span> FAQ</h2>
